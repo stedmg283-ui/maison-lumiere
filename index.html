@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maison Lumière, Curtain Atelier in Bengaluru</title>
+<meta name="description" content="Made-to-measure curtains, blinds and upholstery, handcrafted in Bengaluru. Book a free home consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2b2622;--muted:#6b6259;--cream:#f7f2ea;--sand:#e9dfd0;--accent:#8a5a3b;--sage:#5d6b55;--r:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.65 Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream)}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .5em}
+h2{font-size:clamp(2rem,4vw,2.8rem)}img{max-width:100%;display:block}a{color:var(--accent)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}section{padding:88px 0}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;color:var(--accent);font-weight:600}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:#fff;padding:8px;z-index:99}
+header{position:sticky;top:0;z-index:50;background:rgba(247,242,234,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--sand)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:600;text-decoration:none;color:var(--ink)}
+.logo span{color:var(--accent)}nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--ink);font-size:.92rem}nav a:hover{color:var(--accent)}
+.menu-btn{display:none;background:none;border:1px solid var(--ink);border-radius:8px;padding:6px 12px;font:inherit}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:#6f4630}.btn.ghost{background:transparent;color:#fff;border:1px solid #fff}
+:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;padding:0}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,22,16,.72),rgba(30,22,16,.15))}
+.hero .wrap{position:relative;z-index:1}.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);max-width:12ch}
+.hero p{max-width:46ch;font-size:1.1rem;opacity:.95}.hero .eyebrow{color:#f0d9c4}.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.grid{display:grid;gap:24px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border-radius:var(--r);padding:28px;box-shadow:0 1px 0 var(--sand)}
+.card .ico{font-size:1.6rem;margin-bottom:10px}.card p{color:var(--muted);margin:0}
+.intro{max-width:620px;margin-bottom:44px;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:16px;height:560px}
+.gallery figure{margin:0;position:relative;border-radius:var(--r);overflow:hidden}.gallery figure:first-child{grid-row:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.9);padding:4px 12px;border-radius:999px;font-size:.82rem}
+.alt{background:var(--sand)}.step{counter-increment:s}.step h3::before{content:"0" counter(s);display:block;color:var(--accent);font-size:2.4rem}
+blockquote{margin:0;font-family:"Cormorant Garamond",serif;font-size:1.3rem}.who{margin-top:14px;font-size:.88rem;color:var(--muted)}
+.note{font-size:.8rem;color:var(--muted);margin-top:18px}
+.price{font-size:1.9rem;font-family:"Cormorant Garamond",serif;color:var(--accent)}.price small{font-size:.9rem;color:var(--muted);font-family:Inter}
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}
+form{display:grid;gap:14px}label{font-size:.85rem;font-weight:500}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid #cfc3b3;border-radius:10px;font:inherit;background:#fff}
+footer{background:var(--ink);color:#d8cfc4;padding:48px 0;font-size:.9rem}footer a{color:#f0d9c4}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
+@media(max-width:900px){.g4{grid-template-columns:1fr 1fr}.g3,.contact{grid-template-columns:1fr}
+.gallery{grid-template-columns:1fr;grid-template-rows:none;height:auto}.gallery figure{height:260px}.gallery figure:first-child{grid-row:auto}
+.menu-btn{display:block}nav ul{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--cream);padding:20px 24px;gap:16px;border-bottom:1px solid var(--sand)}
+nav ul.open{display:flex}section{padding:64px 0}}
+@media(max-width:560px){.g4{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap nav">
+<a class="logo" href="#top">Maison <span>Lumière</span></a>
+<nav aria-label="Main"><button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul id="menu"><li><a href="#services">Services</a></li><li><a href="#gallery">Work</a></li><li><a href="#process">Process</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<section class="hero" id="top">
+<img src="images/hero.jpg" alt="Sunlit living room with floor-length cream linen curtains on a brass rod" fetchpriority="high">
+<div class="wrap"><p class="eyebrow">Curtain Atelier · Bengaluru, since 2009</p>
+<h1>Light, tailored to your home.</h1>
+<p>Made-to-measure curtains, blinds and upholstery, cut and sewn by hand in our Indiranagar workshop and fitted by the people who made them.</p>
+<div class="cta"><a class="btn" href="#contact">Book a free home consultation</a><a class="btn ghost" href="#gallery">See our work</a></div></div>
+</section>
+<section id="services"><div class="wrap">
+<p class="eyebrow">What we make</p><h2>Four crafts, one atelier</h2>
+<p class="intro">Every piece starts with your windows, your light and the way you live. Choose from more than 600 natural fabrics: linen, velvet, wool and silk.</p>
+<div class="grid g4">
+<article class="card"><div class="ico" aria-hidden="true">🪡</div><h3>Made-to-measure curtains</h3><p>Pinch pleat, wave or eyelet, fully lined, interlined or blackout, hand-finished hems.</p></article>
+<article class="card"><div class="ico" aria-hidden="true">🪟</div><h3>Blinds &amp; shutters</h3><p>Roman, roller and woven-wood blinds, with motorised options for tall windows.</p></article>
+<article class="card"><div class="ico" aria-hidden="true">🛋️</div><h3>Upholstery</h3><p>New life for heirloom chairs, headboards and banquettes, using traditional or modern methods.</p></article>
+<article class="card"><div class="ico" aria-hidden="true">📐</div><h3>Home consultation</h3><p>We bring swatches to you, measure precisely and give you a fixed quote within 48 hours.</p></article>
+</div></div></section>
+<section id="gallery" class="alt"><div class="wrap">
+<p class="eyebrow">Recent work</p><h2>From the atelier</h2>
+<div class="gallery">
+<figure><img src="images/bedroom.jpg" alt="Bedroom with sage green velvet curtains layered over white sheer voile" loading="lazy"><figcaption>Sage velvet &amp; voile, Bedroom</figcaption></figure>
+<figure><img src="images/blinds.jpg" alt="Kitchen bay window with woven-wood roman blinds above oak café shutters" loading="lazy"><figcaption>Woven roman blinds, Kitchen</figcaption></figure>
+<figure><img src="images/atelier.jpg" alt="Workbench with terracotta, ivory and navy fabric swatches, shears and a reupholstered armchair" loading="lazy"><figcaption>Upholstery in progress</figcaption></figure>
+</div></div></section>
+<section id="process"><div class="wrap">
+<p class="eyebrow">How it works</p><h2>Three simple steps</h2>
+<div class="grid g3">
+<div class="card step"><h3>Consult &amp; measure</h3><p>A free visit at home. We talk style and light, show fabrics and take exact measurements.</p></div>
+<div class="card step"><h3>Handcraft</h3><p>Your pieces are cut and sewn in our workshop, usually within 3–4 weeks.</p></div>
+<div class="card step"><h3>Fit &amp; style</h3><p>We install, steam and dress every curtain so it hangs perfectly on day one.</p></div>
+</div></div></section>
+<section class="alt" aria-labelledby="t-h"><div class="wrap">
+<p class="eyebrow">Kind words</p><h2 id="t-h">What clients say</h2>
+<div class="grid g3">
+<figure class="card"><blockquote>“The linen curtains changed the whole feel of our apartment. Soft light all day.”</blockquote><figcaption class="who">Meera K., HSR Layout</figcaption></figure>
+<figure class="card"><blockquote>“They saved my grandmother’s armchair. It looks better now than when it was new.”</blockquote><figcaption class="who">Ananya R., Koramangala</figcaption></figure>
+<figure class="card"><blockquote>“Punctual, precise, and the blackout blinds finally let our baby sleep.”</blockquote><figcaption class="who">Sofia &amp; Marc R., Caluire</figcaption></figure>
+</div>
+<p class="note">Sample testimonials for a fictional business, shown for demonstration only.</p>
+</div></section>
+<section id="pricing"><div class="wrap">
+<p class="eyebrow">Guide prices</p><h2>Transparent from the start</h2>
+<p class="intro">Every project is quoted individually. These starting prices include measuring, making and fitting.</p>
+<div class="grid g3">
+<div class="card"><h3>Curtains</h3><p class="price">from ₹4,500 <small>/ window</small></p><p>Lined, pinch pleat, standard window up to 2 m wide.</p></div>
+<div class="card"><h3>Roman blinds</h3><p class="price">from ₹3,000 <small>/ blind</small></p><p>Fabric of your choice, chain or cordless operation.</p></div>
+<div class="card"><h3>Upholstery</h3><p class="price">from ₹2,500 <small>/ chair</small></p><p>Occasional chair, fabric extra. Free collection in Bengaluru.</p></div>
+</div></div></section>
+<section id="contact" class="alt"><div class="wrap contact">
+<div><p class="eyebrow">Get in touch</p><h2>Book your free consultation</h2>
+<p>Tell us a little about your project and we’ll reply within one working day.</p>
+<p><strong>Atelier</strong><br>100 Feet Road, Indiranagar, Bengaluru 560038 (fictional)<br>Tue–Sat · 10:00–18:00</p>
+<p><a href="tel:+919800000000">+91 98000 00000</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+<form id="f" action="mailto:hello@example.com" method="post" enctype="text/plain">
+<div><label for="n">Name</label><input id="n" name="name" required autocomplete="name"></div>
+<div><label for="e">Email</label><input id="e" name="email" type="email" required autocomplete="email"></div>
+<div><label for="s">Service</label><select id="s" name="service"><option>Made-to-measure curtains</option><option>Blinds &amp; shutters</option><option>Upholstery</option><option>Home consultation</option></select></div>
+<div><label for="m">Your project</label><textarea id="m" name="message" rows="4"></textarea></div>
+<button class="btn" type="submit">Send request</button>
+<p class="note" role="status" id="fs">This demo form opens your email app. No data is stored.</p>
+</form></div></section>
+</main>
+<footer><div class="wrap foot">
+<div><span class="logo" style="color:#fff">Maison <span>Lumière</span></span><br>Curtain Atelier · Bengaluru</div>
+<div>© 2026 Maison Lumière (fictional business, portfolio sample).<br>Site design &amp; build: AI-assisted demo.</div>
+</div></footer>
+<script>
+const b=document.querySelector('.menu-btn'),m=document.getElementById('menu');
+b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}));
+</script>
+</body></html>
